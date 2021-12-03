@@ -3,4 +3,4 @@
 ## Date：2021/12/3
 ## 效果展示
 
-![show](../imgs/show.png)
+![show](./show.png)
