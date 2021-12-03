@@ -1,0 +1,25 @@
+% 实验1-作业1-伪色彩变换（Pseudo Color Processing）
+% Student: 刘蒋沅琛（19270617）
+% Date：2021/12/3
+
+grayImage = rgb2gray(imread('./paimeng.png'));
+%imshow(grayImage);
+[row,col] = size(grayImage);
+
+% RGB(initialization)
+%RGB_R = zeros(row,col)
+%RGB_G = zeros(row,col)
+%RGB_B = zeros(row,col)
+
+%Processing
+outImage = zeros(row,col,3);
+for i = 1:row
+    for j = 1:col
+        grayImage(i,j)
+        [outImage(i,j,1),outImage(i,j,2),outImage(i,j,3)] = PseudoColorMapping(grayImage(i,j));
+    end % iterate col
+end % iterate row
+
+outImage
+
+imshow(outImage);
