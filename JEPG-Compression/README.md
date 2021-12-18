@@ -12,4 +12,4 @@
 ![show](./show_40.png)
 
 ### DC & AC 系数的Z字形编码
-![show](./z.png)
+![show](./Z.png)
